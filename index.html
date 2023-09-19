@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Uyi - Tarot</title>
+</head>
+<body>
+    
+    
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">Uyi Tarot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-divide" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">Sesiones y Planes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#guia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guía Práctica
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#guia">Guía</a></li>
+                                <li><a class="dropdown-item" href="./pages/arcanos-mayores.html">Arcanos Mayores</a></li>
+                                <li><a class="dropdown-item" href="./pages/arcanos-menores.html">Arcanos Menores</a></li>
+                                <li><a class="dropdown-item" href="./pages/tiradas-frecuentes.html">Tiradas Frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comentarios">Comentarios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="https://api.whatsapp.com/send?phone=5491127451031&text=Hola%20Uyi!%20quisiera%20saber%20más%20sobre%20los%20planes" target="_blank">
+                                <div class="header__img">
+                                    <img src="./img/wapp.png" width="25px" alt="whatsapp logo">
+                                </div>
+                            </a>
+                        </li>
+                        <!-- LOGIN BOTON -->
+                        <li class="nav-item">
+                            <div id="divBtnLogIn">
+                                <button class="nav-link ingresar" id="ingresar">Ingresar</button>
+                            </div>
+                            <!--INGRESAR CUENTA -->
+                            <div id="popUpLoginContainer" class="popUpLoginContainer">
+                                <button class="btncerrar">x</button>
+                                <p class="p-carrito" id="popUpLoginFirstP">Si ya tienes una cuenta ingresa los datos:</p>
+                                <br>
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                <button id="btnIngresar">Ingresar</button>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="p-carrito">Sino, puedes crearte una cuenta: </p>
+                                <br>
+                                
+                                <button id="btnCrearCuenta">Crear cuenta</button>
+                            </div>
+                            <!--CREAR CUENTA -->
+                            <div id="popUpCrearCuentaContainer" class="popUpCrearCuentaContainer popUpLoginContainer">
+                                <button class="btncerrar" id="btnCerrarCrearCuenta">x</button>
+                                <p class="p-carrito" id="popUpCrearCuentaFirstP">Ingresa tus datos para crear una cuenta nueva:</p>
+                                
+                                <br>
+                                <p class="p-carrito">Nombre</p>
+                                <input id="inputNuevoNombre" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Apellido</p>
+                                <input id="inputNuevoApellido" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Email</p>
+                                <input id="inputNuevoEmail" type="email">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Fecha de Nacimiento</p>
+                                <input id="inputNuevaFechaNacimiento" type="date" placeholder="dd/mm/aaaa">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Hora de Nacimiento</p>
+                                <input id="inputNuevaHoraNacimiento" type="time" placeholder="hh:mm">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Lugar de Nacimiento</p>
+                                <input id="inputNuevoLugarNacimiento" type="text" placeholder="Buenos Aires, Argentina">
+                                <br>
+                                <br>
+                            
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputNuevoUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputNuevaContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                
+                                <button id="btnCrearNuevaCuenta">Confirmar</button>
+                            </div>
+                            
+
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            
+
+        </nav>
+       
+        
+    </header>
+    <!-- FIN HEADER -->
+
+
+    <!-- MAIN -->
+    <main>
+        <h1>Uyi<br>Tarot</h1>
+    </main>
+    <!-- FIN MAIN-->
+
+
+    <!-- SECTION BIO-->
+    <section id="bio">
+        <div>
+            <img class="bio__foto" src="img/foto-bio.png" alt="Foto de Uyi">
+        </div>
+        <div>
+            <p>¡Hola a todos! Soy Uyi! Mi curriculum formal comienza diciendo licenciada en relaciones del trabajo en la UBA. Sin embargo luego de mi primer contacto con el tarot y este mundo holístico, me encontré poniendo en duda muchísimos pilares con los que crecí. Hoy tengo 34 años, y luego de haberme metido a fondo en este mundo infinito, comencé a implementar la vision del Tarot a mi vida, y por ende, a mi trabajo. Creo que justamente la carrera que elegí me dió la "data dura" y el tarot vino a completarme.</p>
+            
+            <p>Si estás visitando mi página, es probable que ya estés familiarizado con el tarot o, tal vez, seas completamente nuevo en      este campo. No importa en qué punto te encuentres, ¡estoy aquí para guiarte en este emocionante viaje!Ya sea que desees obtener respuestas a preguntas específicas o simplemente quieras conocer más sobre el tarot, has llegado al lugar adecuado.Prepárate para descubrir cómo el tarot puede ser una herramienta transformadora en tu vida. ¡Acompáñame en este apasionante viaje y dejame ayudarte a desvelar los secretos y mensajes que las cartas tienen para vos!
+            </p>
+        </div>
+
+    </section>
+    <!-- FIN SECTION BIO-->
+
+
+    <!-- SECTION PLANES-->
+    <section id="planes">
+        <div class="planes__intro">
+            <h2>Sesiones y Planes</h2>
+            <p class="planes__intro-p">Si estás buscando una experiencia de tarot personalizada y única, te invito a hacer una tirada conmigo. Mi enfoque se basa en establecer una conexión profunda contigo y entender tus necesidades y preguntas específicas.A través de mi intuición y experiencia, te voy a guiar en un viaje introspectivo para que encuentres respuestas, claridad y perspectiva en tu vida.
+            </p>
+        </div>
+        <div class="planes__lineadivisora"></div>
+        <div class="planes__contenedor-column">
+            <div class="planes__contenedor-column-row">
+                <div class="planes__contenedor-column-row-plan">
+                    <h3>Plan 1</h3>
+                    <ul>
+                        <li class="planes__li">Dos Tiradas a elección.</li>
+                        <li class="planes__li">Sesión de 40min por Zoom.</li> 
+                        <li class="planes__li">Grabación de la sesión.</li>
+                        <li class="planes__li">Resumen en pdf de la tirada.</li>
+                    </ul>
+                    <p>ARS$5000 ó USD$100</p>
+                </div>
+                <div>
+                    <h3>Plan 2</h3>
+                    <ul>
+                        <li class="planes__li">Dos Tiradas a elección.</li>
+                        <li class="planes__li">Sesión de 40min por Zoom.</li> 
+                        <li class="planes__li">Grabación de la sesión.</li>
+                        <li class="planes__li">Resumen en pdf de la tirada.</li>
+                    </ul>
+                    <p>ARS$5000 ó USD$100</p>
+                </div>
+            </div>    
+            <div class="planes__contenedor-column-row">
+                <div>
+                    <h3>Plan 2</h3>
+                    <ul>
+                        <li class="planes__li">Dos Tiradas a elección.</li>
+                        <li class="planes__li">Sesión de 40min por Zoom.</li> 
+                        <li class="planes__li">Grabación de la sesión.</li>
+                        <li class="planes__li">Resumen en pdf de la tirada.</li>
+                    </ul>
+                    <p>ARS$5000 ó USD$100</p>
+                </div>
+                <div>
+                    <h3>Plan 2</h3>
+                    <ul>
+                        <li class="planes__li">Dos Tiradas a elección.</li>
+                        <li class="planes__li">Sesión de 40min por Zoom.</li> 
+                        <li class="planes__li">Grabación de la sesión.</li>
+                        <li class="planes__li">Resumen en pdf de la tirada.</li>
+                    </ul>
+                    <p>ARS$5000 ó USD$100</p>
+                </div>
+            </div>
+        </div class="planes__contenedor-column">
+        
+    </section>
+    <!-- FIN SECTION PLANES-->
+
+
+    <!-- SECTION GUIA-->
+    <section id="guia">
+        <h2>Guía Práctica</h2>
+        <div class="guia__contenedor">
+            <a href="pages/arcanos-mayores.html">
+                <div class="guia__contenedor-item">
+                    <img class="guia__contenedor-item-img" src="img/guia/mayores.png" alt="Arcanos Mayores">
+                    <h3>Arcanos Mayores</h3>
+                    <p>Significado de cada Arcano</p>
+                </div>
+            </a>
+            <a href="pages/arcanos-menores.html">
+                <div class="guia__contenedor-item">
+                    <img class="guia__contenedor-item-img" src="img/guia/menores.png" alt="Arcanos Menores">
+                    <h3>Arcanos Menores</h3>
+                    <p>Significado numerológico y por palo</p>
+                </div>
+            </a>
+            <a href="pages/tiradas-frecuentes.html">
+                <div class="guia__contenedor-item">
+                    <img class="guia__contenedor-item-img" src="img/guia/tirada.png" alt="Tiradas de tarot">
+                    <h3>Tiradas</h3>
+                    <p>Tiradas frecuentes</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- FIN SECTION GUIA-->
+
+
+    <!-- SECTION BLOG-->
+    <section id="blog">
+
+        <div class="blog__texto">
+            <p class="blog__texto-titulo">Dias de la vida     15/11/1988</p>
+            <p class="blog__texto-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, minima dolorem. Veniam, recusandae! Eum saepe est non dolor mollitia. Beatae vel sit facilis accusamus excepturi esse, hic rerum ipsum cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestiae ea illo obcaecati veniam a distinctio doloribus aspernatur magni at nobis iure accusamus beatae unde, consectetur voluptatum, ipsum itaque nostrum. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, obcaecati. Delectus dolorum deserunt velit, accusantium tenetur cum laborum corrupti! Temporibus totam quia ut laboriosam voluptas iste laudantium natus maiores minima. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius vero nostrum natus libero mollitia illum rerum nulla deserunt fugiat! Autem reprehenderit totam aut quis inventore delectus asperiores facilis sit dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias corporis obcaecati ullam debitis rem, optio officia amet excepturi consequatur illum veritatis omnis, suscipit adipisci earum quaerat sunt deleniti iusto dolorum.</p>
+        </div>
+
+        <div class="blog__intro">
+            <h2 class="blog__intro-titulo">Blog</h2>
+            <p>Aquí plasmo cada vez que me llega un mensaje y mi mano no puede detenerse.</p>
+        </div>
+        
+    </section>
+    <!-- FIN SECTION BLOG-->
+
+
+    <!-- SECTION COMENTARIOS-->
+
+
+    <section id="comentarios">
+        <img class="comentarios__img" src="img/banner-comentarios.png" alt="banner imagenes tarot">
+        <h2>Comentarios de quienes pasaron por aquí</h2>
+        <!-- CARRUSEL-->
+        <div id="carouselExampleIndicators" class="carousel slide comentarios__carrusel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="comentarios__contenedor">
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">tu22:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"Una genia la uyi! me cambio la life"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">margaritatetera:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"El plan uyi me sirvió mucho para salir de una situación complicada. Muchas gracias!"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">cielooscurito99:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"La recomiendo, alta mina, alta bruja"</p>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="comentarios__contenedor">
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">tu22:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"Una genia la uyi! me cambio la life"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">margaritatetera:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"El plan uyi me sirvió mucho para salir de una situación complicada. Muchas gracias!"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">cielooscurito99:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"La recomiendo, alta mina, alta bruja"</p>
+                        </div>
+        
+                     </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="comentarios__contenedor">
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">t:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"Una genia la uyi! me cambio la life"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">margaritatetera:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"El plan uyi me sirvió mucho para salir de una situación complicada. Muchas gracias!"</p>
+                        </div>
+                        <div class="comentarios__contenedor-item">
+                            <p class="comentarios__contenedor-item-titulo">cielooscurito99:</p>
+                            <p class="comentarios__contenedor-item-parrafo">"La recomiendo, alta mina, alta bruja"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <!-- FIN SECTION COMENTARIOS-->
+
+
+    <!-- FOOTER -->
+    <footer>
+       Este sitio web ha sido desarrollado por .lgProd
+
+
+    </footer>
+    <!-- FIN FOOTER-->
+
+
+
+        
+        
+
+
+
+
+
+    <script src="./js/login.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

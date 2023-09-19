@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <title>Arcanos Mayores - Uyi</title>
+    </head>
+<body>
+
+    <!-- ... HEADER ... -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../../index.html">Uyi Tarot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-divide" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#planes">Sesiones y Planes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../../index.html#guia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guía Práctica
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../index.html#guia">Guía</a></li>
+                                <li><a class="dropdown-item" href="#">Arcanos Mayores</a></li>
+                                <li><a class="dropdown-item" href="./arcanos-menores.html">Arcanos Menores</a></li>
+                                <li><a class="dropdown-item" href="./tiradas-frecuentes.html">Tiradas Frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#comentarios">Comentarios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#">
+                                <div class="header__img">
+                                    <img src="../../img/wapp.png" width="25px" alt="whatsapp logo">
+                                </div>
+                            </a>
+                        </li>
+                        <!-- LOGIN BOTON -->
+                        <li class="nav-item">
+                            <div id="divBtnLogIn">
+                                <button class="nav-link ingresar" id="ingresar">Ingresar</button>
+                            </div>
+                            <!--INGRESAR CUENTA -->
+                            <div id="popUpLoginContainer" class="popUpLoginContainer">
+                                <button class="btncerrar">x</button>
+                                <p class="p-carrito" id="popUpLoginFirstP">Si ya tienes una cuenta ingresa los datos:</p>
+                                <br>
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                <button id="btnIngresar">Ingresar</button>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="p-carrito">Sino, puedes crearte una cuenta: </p>
+                                <br>
+                                
+                                <button id="btnCrearCuenta">Crear cuenta</button>
+                            </div>
+                            <!--CREAR CUENTA -->
+                            <div id="popUpCrearCuentaContainer" class="popUpCrearCuentaContainer popUpLoginContainer">
+                                <button class="btncerrar" id="btnCerrarCrearCuenta">x</button>
+                                <p class="p-carrito" id="popUpCrearCuentaFirstP">Ingresa tus datos para crear una cuenta nueva:</p>
+                                
+                                <br>
+                                <p class="p-carrito">Nombre</p>
+                                <input id="inputNuevoNombre" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Apellido</p>
+                                <input id="inputNuevoApellido" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Email</p>
+                                <input id="inputNuevoEmail" type="email">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Fecha de Nacimiento</p>
+                                <input id="inputNuevaFechaNacimiento" type="date" placeholder="dd/mm/aaaa">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Hora de Nacimiento</p>
+                                <input id="inputNuevaHoraNacimiento" type="time" placeholder="hh:mm">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Lugar de Nacimiento</p>
+                                <input id="inputNuevoLugarNacimiento" type="text" placeholder="Buenos Aires, Argentina">
+                                <br>
+                                <br>
+                            
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputNuevoUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputNuevaContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                
+                                <button id="btnCrearNuevaCuenta">Confirmar</button>
+                            </div>
+                            
+
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            
+
+        </nav>
+        
+        
+    </header>
+    <!-- ... FIN HEADER ... -->
+
+
+    <main id="mayores">
+        <h1>Arcanos Mayores</h1>
+        <div class="mayores__contenedor">
+            <a href="#arcano0">
+                <div class="mayores__item">
+                    <img src="../../img/guia/mayores/1.png" alt="el loco">
+                    <p>0: El Loco</p>
+                </div>
+            </a>
+            <div class="mayores__contenedor-column">
+                <div class="mayores__contenedor-row">
+                    <a href="#arcano1">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/2.png" alt="el mago">
+                            <p>1: El Mago</p>
+                        </div>
+                    </a>
+                    <a href="#arcano2">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/3.png" alt="la papisa">
+                            <p>2: La Papisa</p>
+                        </div>
+                    </a>
+                    <a href="#arcano3">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/4.png" alt="la emperatriz">
+                            <p>3: La Emperatriz</p>
+                        </div>
+                    </a>
+                    <a href="#arcano4">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/5.png" alt="El Emperador">
+                            <p>4: El Emperador</p>
+                        </div>
+                    </a>
+                    <a href="#arcano5">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/6.png" alt="El Papa">
+                            <p>5: El Papa</p>
+                        </div>
+                    </a>
+                    <a href="#arcano6">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/7.png" alt="Los Enamorados">
+                            <p>6: Los Enamorados</p>
+                        </div>
+                    </a>
+                    <a href="#arcano7">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/8.png" alt="El Carro">
+                            <p>7: El Carro</p>
+                        </div>
+                    </a>
+                    <a href="#arcano8">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/9.png" alt="La Justicia">
+                            <p>8: La Justicia</p>
+                        </div>
+                    </a>
+                    <a href="#arcano9">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/10.png" alt="El Hermitaño">
+                            <p>9: El Hermitaño</p>
+                        </div>
+                    </a>
+                    <a href="#arcano10">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/11.png" alt="La rueda de la fortuna">
+                            <p>10: La rueda de la Fortuna</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="mayores__contenedor-row">
+                    <a href="#arcano11">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/12.png" alt="La Fuerza">
+                            <p>11: La Fuerza</p>
+                        </div>
+                    </a>
+                    <a href="#arcano12">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/13.png" alt="El Colgado">
+                            <p>12: El Colgado</p>
+                        </div>
+                    </a>
+                    <a href="#arcano13">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/14.png" alt="Arcano Sin Nombre">
+                            <p>13: Arcano Sin Nombre</p>
+                        </div>
+                    </a>
+                    <a href="#arcano14">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/15.png" alt="La Templanza">
+                            <p>14: La Templanza</p>
+                        </div>
+                    </a>
+                    <a href="#arcano15">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/16.png" alt="El Diablo">
+                            <p>15: El Diablo</p>
+                        </div>
+                    </a>
+                    <a href="#arcano16">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/17.png" alt="La Torre">
+                            <p>16: La Torre</p>
+                        </div>
+                    </a>
+                    <a href="#arcano17">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/18.png" alt="La Estrella">
+                            <p>17: La estrella</p>
+                        </div>
+                    </a>
+                    <a href="#arcano18">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/19.png" alt="La Luna">
+                            <p>18: La Luna</p>
+                        </div>
+                    </a>
+                    <a href="#arcano19">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/20.png" alt="El Sol">
+                            <p>19: El Sol</p>
+                        </div>
+                    </a>
+                    <a href="#arcano20">
+                        <div class="mayores__item">
+                            <img src="../../img/guia/mayores/21.png" alt="El Juicio">
+                            <p>20: El Juicio</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#arcano21">
+                <div class="mayores__item">
+                    <img src="../../img/guia/mayores/22.png" alt="el mundo">
+                    <p>21: El Mundo</p>
+                </div>
+            </a>
+        </div>
+
+    </main>
+    <section id="arcano0" class="arcanomayor">
+        <img src="../../img/guia/mayores/1.png" alt="el loco">
+        <div>
+            <h2>Arcano 0: "El Loco"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano1" class="arcanomayor">
+        <img src="../../img/guia/mayores/2.png" alt="El mago">
+        <div>
+            <h2>Arcano 1: "El Mago"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano2" class="arcanomayor">
+        <img src="../../img/guia/mayores/3.png" alt="La Papisa">
+        <div>
+            <h2>Arcano 2: "La Papisa"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano3" class="arcanomayor">
+        <img src="../../img/guia/mayores/4.png" alt="La Emperatriz">
+        <div>
+            <h2>Arcano 3: "La Emperatriz"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano4" class="arcanomayor">
+        <img src="../../img/guia/mayores/5.png" alt="El Emperador">
+        <div>
+            <h2>Arcano 4: "El Emperador"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano5" class="arcanomayor">
+        <img src="../../img/guia/mayores/6.png" alt="El Papa">
+        <div>
+            <h2>Arcano 5: "El Papa"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano6" class="arcanomayor">
+        <img src="../../img/guia/mayores/7.png" alt="Los Enamorados">
+        <div>
+            <h2>Arcano 6: "Los Enamorados"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano7" class="arcanomayor">
+        <img src="../../img/guia/mayores/8.png" alt="El Carro">
+        <div>
+            <h2>Arcano 7: "El Carro"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano8" class="arcanomayor">
+        <img src="../../img/guia/mayores/9.png" alt="La Justicia">
+        <div>
+            <h2>Arcano 8: "La Justicia"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano9" class="arcanomayor">
+        <img src="../../img/guia/mayores/10.png" alt="El Hermitaño">
+        <div>
+            <h2>Arcano 9: "El Hermitaño"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano10" class="arcanomayor">
+        <img src="../../img/guia/mayores/11.png" alt="Rueda de la Fortuna">
+        <div>
+            <h2>Arcano 10: "La Rueda de la Fortuna"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano11" class="arcanomayor">
+        <img src="../../img/guia/mayores/12.png" alt="La Fuerza">
+        <div>
+            <h2>Arcano 11: "La Fuerza"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano12" class="arcanomayor">
+        <img src="../../img/guia/mayores/13.png" alt="El Colgado">
+        <div>
+            <h2>Arcano 12: "El Colgado"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano13" class="arcanomayor">
+        <img src="../../img/guia/mayores/14.png" alt="Arcano Sin Nombre">
+        <div>
+            <h2>Arcano 13: "Arcano Sin Nombre / La Muerte"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano14" class="arcanomayor">
+        <img src="../../img/guia/mayores/15.png" alt="La Templanza">
+        <div>
+            <h2>Arcano 14: "La Templanza"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano15" class="arcanomayor">
+        <img src="../../img/guia/mayores/16.png" alt="El Diablo">
+        <div>
+            <h2>Arcano 15: "El Diablo"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano16" class="arcanomayor">
+        <img src="../../img/guia/mayores/17.png" alt="La Torre">
+        <div>
+            <h2>Arcano 16: "La Torre"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano17" class="arcanomayor">
+        <img src="../../img/guia/mayores/18.png" alt="La Estrella">
+        <div>
+            <h2>Arcano 17: "La Estrella"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano18" class="arcanomayor">
+        <img src="../../img/guia/mayores/19.png" alt="La Luna">
+        <div>
+            <h2>Arcano 18: "La Luna"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano19" class="arcanomayor">
+        <img src="../../img/guia/mayores/20.png" alt="El Sol">
+        <div>
+            <h2>Arcano 19: "El Sol"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano20" class="arcanomayor">
+        <img src="../../img/guia/mayores/21.png" alt="El Juicio">
+        <div>
+            <h2>Arcano 20: "El Juicio"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+    <section id="arcano21" class="arcanomayor">
+        <img src="../../img/guia/mayores/22.png" alt="El Mundo">
+        <div>
+            <h2>Arcano 21: "El Mundo"</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores natus temporibus esse rerum, modi cumque, a eum quo voluptates ullam excepturi neque corrupti laudantium deserunt nemo molestias eaque porro error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio facere doloremque porro officia! Eaque, voluptatibus deserunt blanditiis saepe rerum vero impedit harum molestiae, ea earum, aspernatur esse dicta. Perspiciatis.</p>
+            <a class="indice-boton" href="#">Volver al Indice</a>
+        </div>
+    </section>
+
+
+    <script src="../js/login.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

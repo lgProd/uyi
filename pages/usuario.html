@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+    
+    <title>Usuario - Uyi</title>
+</head>
+<body>
+
+    <!-- ... HEADER ... -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html">Uyi Tarot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-divide" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#planes">Sesiones y Planes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../index.html#guia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Guía Práctica
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html#guia">Guía</a></li>
+                                <li><a class="dropdown-item" href="../pages/guia/arcanos-mayores.html">Arcanos Mayores</a></li>
+                                <li><a class="dropdown-item" href="../pages/guia/arcanos-menores.html">Arcanos Menores</a></li>
+                                <li><a class="dropdown-item" href="../pages/guia/tiradas-frecuentes.html">Tiradas Frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#comentarios">Comentarios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#">
+                                <div class="header__img">
+                                    <img src="../img/wapp.png" width="25px" alt="whatsapp logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="divBtnLogIn">
+                                <button class="nav-link ingresar" id="ingresar">Ingresar</button>
+                            </div>
+                            <!--INGRESAR CUENTA -->
+                            <div id="popUpLoginContainer" class="popUpLoginContainer">
+                                <button class="btncerrar">x</button>
+                                <p class="p-carrito" id="popUpLoginFirstP">Si ya tienes una cuenta ingresa los datos:</p>
+                                <br>
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                <button id="btnIngresar">Ingresar</button>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="p-carrito">Sino, puedes crearte una cuenta: </p>
+                                <br>
+                                
+                                <button id="btnCrearCuenta">Crear cuenta</button>
+                            </div>
+                            <!--CREAR CUENTA -->
+                            <div id="popUpCrearCuentaContainer" class="popUpCrearCuentaContainer popUpLoginContainer">
+                                <button class="btncerrar" id="btnCerrarCrearCuenta">x</button>
+                                <p class="p-carrito" id="popUpCrearCuentaFirstP">Ingresa tus datos para crear una cuenta nueva:</p>
+                                
+                                <br>
+                                <p class="p-carrito">Nombre</p>
+                                <input id="inputNuevoNombre" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Apellido</p>
+                                <input id="inputNuevoApellido" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Email</p>
+                                <input id="inputNuevoEmail" type="email">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Fecha de Nacimiento</p>
+                                <input id="inputNuevaFechaNacimiento" type="date" placeholder="dd/mm/aaaa">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Hora de Nacimiento</p>
+                                <input id="inputNuevaHoraNacimiento" type="time" placeholder="hh:mm">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Lugar de Nacimiento</p>
+                                <input id="inputNuevoLugarNacimiento" type="text" placeholder="Buenos Aires, Argentina">
+                                <br>
+                                <br>
+                            
+                                <p class="p-carrito">Usuario</p>
+                                <input id="inputNuevoUsuario" type="text">
+                                <br>
+                                <br>
+                                <p class="p-carrito">Contraseña</p>
+                                <input id="inputNuevaContraseña" type="password" >
+                            
+                                <br>
+                                <br>
+                                
+                                <button id="btnCrearNuevaCuenta">Confirmar</button>
+                            </div>
+                            
+
+                        </li>
+                        
+                    </ul> 
+                </div>
+            </div>
+            
+
+        </nav>
+    </header>    
+
+    <main>
+        
+        <div id="datos-container">
+            
+        </div>
+        <button id="salir-sesion" class="btn-primary salir">Finalizar Sesión</button>
+    </main>
+
+    <!-- SCRIPTS -->
+
+   
+    
+    <script src="../js/login.js" type="module"></script>
+    
+</body>
+
+
+</html>

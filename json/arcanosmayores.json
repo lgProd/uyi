@@ -1,0 +1,137 @@
+
+[
+    {
+        "numero": 0,
+        "nombre": "El Loco",
+        "descripcion": "Simboliza la espontaneidad, la aventura y la confianza en el viaje de la vida, sin miedo al desconocido, representando un nuevo comienzo lleno de posibilidades.",
+        "img": "../img/guia/mayores/1.png"
+    },
+    {
+        "numero": 1,
+        "nombre": "El Mago",
+        "descripcion": "Representa la habilidad para manifestar deseos a través de la voluntad y la creatividad, combinando las energías espirituales y terrenales para crear cambios en la vida.",
+        "img": "../img/guia/mayores/2.png"
+    },
+    {
+        "numero": 2,
+        "nombre": "La Papisa",
+        "descripcion": "Encarna la intuición y el conocimiento oculto, sirviendo como un puente entre el consciente y el inconsciente, revelando los misterios más profundos y la conexión con lo divino.",
+        "img": "../img/guia/mayores/3.png"
+    },
+    {
+        "numero": 3,
+        "nombre": "La Emperatriz",
+        "descripcion": "Simboliza la feminidad, la abundancia y el amor maternal, representando la creación y la fertilidad, así como el poder de nutrir y dar vida a nuevas ideas y proyectos.",
+        "img": "../img/guia/mayores/4.png"
+    },
+    {
+        "numero": 4,
+        "nombre": "El Emperador",
+        "descripcion": "Representa la autoridad, el poder y el control, simbolizando la capacidad de liderar y tomar decisiones sólidas en la vida.",
+        "img": "../img/guia/mayores/5.png"
+    },
+    {
+        "numero": 5,
+        "nombre": "El Papa",
+        "descripcion": "Encarna la espiritualidad organizada, la búsqueda de la sabiduría y la conexión con lo divino a través de rituales y enseñanzas sagradas.",
+        "img": "../img/guia/mayores/6.png"
+    },
+    {
+        "numero": 6,
+        "nombre": "Los Enamorados",
+        "descripcion": "Simbolizan las decisiones importantes y los dilemas amorosos, donde se debe elegir entre el corazón y la razón, marcando un momento crucial en la vida",
+        "img": "../img/guia/mayores/7.png"
+    },
+    {
+        "numero": 7,
+        "nombre": "El Carro",
+        "descripcion": "Representa el control de las fuerzas opuestas y el éxito a través de la determinación y la voluntad, señalando un período de avance y logros.",
+        "img": "../img/guia/mayores/8.png"
+    },
+    {
+        "numero": 8,
+        "nombre": "La Justicia",
+        "descripcion": "Representa la equidad, el equilibrio y la toma de decisiones basadas en la moral y la ética, simbolizando la necesidad de rendir cuentas por nuestras acciones.",
+        "img": "../img/guia/mayores/9.png"
+    },
+    {
+        "numero": 9,
+        "nombre": "El Hermitaño",
+        "descripcion": "Representa la búsqueda interior, la introspección y la sabiduría adquirida a través del aislamiento y la reflexión profunda, señalando un tiempo de autoexploración.",
+        "img": "../img/guia/mayores/10.png"
+    },
+    {
+        "numero": 10,
+        "nombre": "La rueda de la Fortuna",
+        "descripcion": " Simboliza el ciclo de la vida, el destino y las oportunidades que van y vienen, recordando que la fortuna puede cambiar en cualquier momento.",
+        "img": "../img/guia/mayores/11.png"
+    },
+    {
+        "numero": 11,
+        "nombre": "La Fuerza",
+        "descripcion": "Simboliza el dominio de los instintos y la fuerza interior para superar desafíos a través de la compasión y la paciencia, demostrando que el verdadero poder reside en la bondad.",
+        "img": "../img/guia/mayores/12.png"
+    },
+    {
+        "numero": 12,
+        "nombre": "El colgado",
+        "descripcion": "Simboliza la renuncia y el sacrificio voluntario para obtener una nueva perspectiva y comprensión, a menudo implicando la necesidad de soltar lo antiguo para avanzar.",
+        "img": "../img/guia/mayores/13.png"
+    },
+    {
+        "numero": 13,
+        "nombre": "Arcano Sin Nombre",
+        "descripcion": "Representa la transformación profunda y el cambio inevitable, marcando el fin de una etapa y el comienzo de otra, a menudo con una oportunidad de renacimiento.",
+        "img": "../img/guia/mayores/14.png"
+    },
+    {
+        "numero": 14,
+        "nombre": "La Templanza",
+        "descripcion": "Simboliza la armonía y el equilibrio, así como la combinación de fuerzas opuestas para lograr la paz interior y la sanación.",
+        "img": "../img/guia/mayores/15.png"
+    },
+    {
+        "numero": 15,
+        "nombre": "El Diablo",
+        "descripcion": "Representa la tentación, la adicción y las cadenas autoimpuestas que limitan la libertad, recordando la importancia de liberarse de las ataduras.",
+        "img": "../img/guia/mayores/16.png"
+    },
+    {
+        "numero": 16,
+        "nombre": "La Torre",
+        "descripcion": "Simboliza la destrucción repentina y la revelación de la verdad, a menudo con resultados inesperados que conducen a una reconstrucción.",
+        "img": "../img/guia/mayores/17.png"
+    },
+    {
+        "numero": 17,
+        "nombre": "La Estrella",
+        "descripcion": "Representa la esperanza, la inspiración y la conexión con lo divino, trayendo luz a la oscuridad y prometiendo un futuro lleno de posibilidades.",
+        "img": "../img/guia/mayores/18.png"
+    },
+    {
+        "numero": 18,
+        "nombre": "La Luna",
+        "descripcion": "Simboliza la ilusión y la confusión, así como la exploración de los aspectos más profundos del subconsciente, a menudo revelando verdades ocultas.",
+        "img": "../img/guia/mayores/19.png"
+    },
+    {
+        "numero": 19,
+        "nombre": "El Sol",
+        "descripcion": "Representa la alegría, la vitalidad y la claridad mental, irradiando positividad y éxito en todos los aspectos de la vida.",
+        "img": "../img/guia/mayores/20.png"
+    },
+    {
+        "numero": 20,
+        "nombre": "El Juicio",
+        "descripcion": "Simboliza la evaluación y el despertar espiritual, donde las acciones pasadas tienen consecuencias significativas, marcando un momento de reflexión y transformación.",
+        "img": "../img/guia/mayores/21.png"
+    },
+    {
+        "numero": 21,
+        "nombre": "El Mundo",
+        "descripcion": "Representa la culminación y la realización de metas, así como la unidad y la integración de todas las experiencias, señalando un logro significativo y un nuevo comienzo.",
+        "img": "../img/guia/mayores/22.png"
+    }
+      
+     
+]    
